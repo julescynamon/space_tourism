@@ -1,0 +1,272 @@
+.technology {
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &__title {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        line-height: 1;
+        font-family: var(--font-second-title);
+        color: var(--color-white);
+        text-align: center;
+        margin-bottom: 2rem;
+
+        & span {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--color-white-variant);
+            letter-spacing: 2.7px;
+            line-height: 1;
+            margin-right: 15px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 170px;
+        margin-top: 15px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__button {
+
+        &--item {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 0.5px solid var(--color-white);
+            color: var(--color-white);
+            font-size: 16px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 1.7rem;
+            margin-bottom: 2rem;
+            margin-right: 20px;
+            transition: 0.5s ease;
+
+            &:hover {
+                background-color: var(--color-white);
+                color: var(--color-black);
+            }
+
+
+        }
+    }
+
+    &__attract {
+        font-size: 16px;
+        font-family: var(--font-title);
+        color: var(--color-white-variant);
+        text-align: center;
+    }
+
+    &__info {
+        font-size: 24px;
+        font-family: var(--font-title);
+        color: var(--color-white);
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    &__description {
+        font-size: 15px;
+        font-family: var(--font-body);
+        color: var(--color-light-gray);
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.active-btn {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+
+// media query
+
+@media (min-width: 758px) {
+    .technology {
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+
+        &__container {
+            padding-top: 124px;
+        }
+
+        &__title {
+            font-size: 20px;
+            letter-spacing: 3.38px;
+            position: relative;
+            right: 205px;
+        }
+
+        &__img {
+            width: 100%;
+            height: 310px;
+        }
+
+        &__button {
+
+            margin-top: 40px;
+
+            &--item {
+                width: 58px;
+                height: 58px;
+            }
+        }
+
+
+        &__info {
+            font-size: 40px;
+            line-height: auto;
+        }
+
+        &__description {
+            text-align: center;
+            font-size: 16px;
+            line-height: 28px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}
+
+// media query desktop
+
+@media (min-width: 992px) {
+    .technology {
+        background-image: url('/assets/technology/background-technology-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &__container {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: 0.6fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "title title title"
+                "button content image"
+                "button content image";
+        }
+
+        &__title {
+            grid-area: title;
+            font-size: 28px;
+            letter-spacing: 4.72px;
+            position: relative;
+            right: 205px;
+        }
+
+        &__img {
+            grid-area: image;
+            width: 100%;
+            height: 427px;
+        }
+
+        &__button {
+            grid-area: button;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            padding-left: 95px;
+
+
+
+            &--item {
+                width: 80px;
+                height: 80px;
+                margin-top: 0;
+                margin-bottom: 1.5rem;
+                margin-right: 50px;
+            }
+        }
+
+        &__desktop {
+            grid-area: content;
+            margin-top: 95px;
+        }
+
+        &__attract {
+            text-align: start;
+        }
+
+
+        &__info {
+
+            font-size: 40px;
+            line-height: auto;
+            text-align: start;
+        }
+
+        &__description {
+            text-align: start;
+            font-size: 16px;
+            line-height: 28px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .technology {
+
+        &__img {
+            grid-area: image;
+            width: 100%;
+            height: 527px;
+        }
+
+        &__attract {
+            text-align: start;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+
+        &__info {
+
+            font-size: 56px;
+            line-height: auto;
+            text-align: start;
+        }
+
+        &__description {
+            text-align: start;
+            font-size: 18px;
+            line-height: 32px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+}
