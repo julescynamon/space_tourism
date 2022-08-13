@@ -1,5 +1,5 @@
 {
-  "homepage": "htpps//:julescynamon.github.io/space_tourism",
+  "homepage": "https://github.com/julescynamon/space_tourism",
   "name": "space_tourism",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d deploy"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
