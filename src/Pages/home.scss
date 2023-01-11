@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
     
 
     &__container {
@@ -119,6 +120,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        height: auto;
 
         &__container {
             display: grid;
