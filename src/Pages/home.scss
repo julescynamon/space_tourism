@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // height: 100vh;
+    
 
     &__container {
         display: flex;
@@ -74,6 +74,7 @@
 @media screen and (min-width: 758px) {
     .home {
         background-image: url('/assets/home/background-home-tablet.jpg');
+        height: 100vh;
 
         &__container {
             width: 450px;
